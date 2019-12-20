@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0f2f1"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="#004d40"
+            app:layout_constraintTop_toTopOf="parent"
+             >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:text="Calculate Import Duty Charge"
+                    android:textColor="#ffffff"
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="40dp"
+            app:cardBackgroundColor="#00695c"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/cd0"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Enter Cost of Goods + Shipping Cost"
+    android:textColor="#ffffff"
+    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/edAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount in Naira (eg. 20,000)"
+                    android:textColorHint="#E2DCDC"
+                    android:layout_marginBottom="20dp"
+                    android:inputType="number"
+                    android:backgroundTint="#ffffff"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:id="@+id/btnCalculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate"
+                    android:textColor="#ffffff"
+                    android:paddingVertical="15dp"
+                    android:background="@drawable/bg_button"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            ads:adSize="BANNER"
+            app:layout_constraintTop_toBottomOf="@+id/cd1"
+            ads:adUnitId="ca-app-pub-9562015878942760/5662190296">
+        </com.google.android.gms.ads.AdView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd3"
+            android:layout_width="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="30dp"
+            android:layout_marginHorizontal="20dp"
+            app:cardBackgroundColor="#b2dfdb"
+            app:layout_constraintTop_toBottomOf="@+id/adView"
+
+            >
+            <LinearLayout
+              android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/cd1"
+                android:paddingVertical="23dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                   android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="@string/total_custom_due_payable"
+                    android:textColor="#009688"
+                    />
+                <TextView
+                    android:id="@+id/tvTariff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="--"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:layout_marginTop="35dp"
+                    android:text="@string/bribe_you_might_pay"
+                    android:textColor="#ff0000"
+                    />
+                <TextView
+                    android:id="@+id/tvBribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="--"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

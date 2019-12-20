@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Nigeria Import Duty Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="description">To calculate custom duty, your duty is calculated based on summing up the following: surface duty (% of CIF), surcharge, administrative charge (CISS), ECOWAS Trade Liberalization Scheme (ETLS), and 5% VAT.
+        \n\n Lets take an Example, if Total Goods cost + Shipping fees = #4,400,000
+
+        \n\nFOB + Freight and Insurance cost = CIF which is #4,400,000 in your case.
+\n\nSurface duty (35% of #4,400,000) = #1,540,000
+\n\nSurcharge (7% of #1,540,000 ) = #107,800
+\n\nETLS (0.5% of #4,400,000) = #22,000
+\n\nCISS (1% of #4,400,000) = #44,000
+\n\nVAT (5% of all above) = 85,690
+\n\nTotal duty payable =  #1,799,490. </string>
+    <string name="total_custom_due_payable"><u>Total Custom Due Payable</u></string>
+    <string name="bribe_you_might_pay"><u>Additional Bribe You Might Pay</u></string>
+    <string name="title_activity_info">About Import Duty</string>
+    <string name="import_prohibition_list">
+
+     <![CDATA[    Live or Dead Birds including Frozen Poultry – HS Codes 0105.1100 – 0105.9900, 0106.3100 – 0106.3900, 0207.1100 – 0207.3600 and 0210.9900
+Pork, Beef – HS Codes 0201.1000 – 0204.5000, 0206.1000 – 0206.9000, 0210.1000 – 0210.2000
+Birds Eggs – HS Code 0407.0000; excluding hatching eggs
+Refined Vegetable Oils and Fats – HS Code 1507.1000.00 – 1516.2000.29 [but excluding refined Linseed, Castor and Olive oils. Crude vegetable oil are however NOT banned from importation]
+Cane or Beet Sugar and Chemically Pure Sucrose, in solid form containing added flavouring or colouring matter – HS Code 1701.91.1000 – 1701.99.9000 in retail packs
+Cocoa Butter, Powder and Cakes – HS Codes 1802.00.0000 – 1803.20000, 1805.001000 – 1805.00.9000, 1806.10.0000 – 1806.20.0000 and 1804.00.0000
+Spaghetti/ Noodles – HS Codes 1902.1100 – 1902.30.0000
+Fruit Juice in Retail Packs – HS Codes 2009.11.0012 – 2009.11.0013 – 2009.9000.99
+Waters, including Mineral Waters and Aerated Waters containing added Sugar or Sweetening Matter or Flavoured, ice snow – HS Codes 2201.1000 – 2201.90.00, other non-alcoholic beverages HS Code 2202.10.00 – 2202.9000.99 [ but excluding energy or Health Drinks {Liquid Dietary Supplements} e.g. Power Horse, Red Ginseng etc.] HS Code 2202.9000.91 and Beer and Stout (Bottled, Canned or Otherwise packed) HS Code 2203.0010.00 – 2203.0090.00
+Bagged Cement – HS Code 2523.2900.22
+Medicaments falling under Headings 3003 and 3004 as indicated below:
+Paracetamol Tablets and Syrups
+Cotrimoxazole Tablets Syrups
+Metronidazole Tablets and Syrups
+Chloroquine Tablets and Syrups
+Haematinic Formulations; Ferrous Sulphate and Ferrous Gluconate Tablets, Folic Acid Tablets, Vitamin B Complex Tablet [except modified released formulations].
+Multivitamin Tablets, Capsules and Syrups [except special formulations].
+Aspirin Tablets [except modified released formulation and soluble aspirin].
+Magnesium Trisilicate Tablets and Suspensions.
+Piperazine Tablets and Syrups
+Levamisole Tablets and Syrups
+Clotrimazole Cream
+Ointments – Penicillin/ Gentamycin
+Pyrantel Pamoate Tablets and Syrups
+Intravenous Fluids [Dextrose, Normal Saline, etc.]
+Waste Pharmaceuticals – HS Code 3006.9200
+Mineral or Chemical Fertilisers containing two or three of the fertilising elements nitrogen,phosphorus and potassium (NPK 15-15-15), excluding organic fertilser HS Code 3105.10.00.00 – 3105.90.00.00
+Soaps and Detergents – HS Code 3401.11.1000 – 3402.90.0000 (in retail packs only)
+Mosquito Repellant Coils – HS Code 3808.9110.91 (Mosquito Coils).
+Rethreaded and used Pneumatic tyres but excluding used trucks tyres for rethreading of sized 11.00 x 20 and above 4012.2010.00
+Corrugated Paper and Paper Boards – HS Code 4808.1000, and Cartons, Boxes and Cases made from corrugated paper and paper boards HS Code 4819.1000, Toilet Paper, Cleaning or Facial Tissue – HS Code 4818.1000 – 4818.9000 excluding baby diapers and incontinence pads for adult use 4818.4000.41 and Exercise Books – HS Code 4820.2000
+Telephone Re-charge Cards and Vouchers – HS Code 4911.9990.91
+Carpets and other Textile Floor Coverings falling under HS Code 5701.10.000 – 5705.00.0000
+All types of Foot Wears, Bags and Suitcases HS Codes 6401.1000.11 – 6405.9000.99 and 4202.1100.10 – 4202.9900.99 [but excluding Safety Shoes used in oil industries, Sports Shoes, canvas shoes all Completely Knocked Down (CKD) blanks and parts]
+Hollow Glass Bottles of a capacity exceeding 150mls (0.15 litres) of all kinds used for packaging of beverages by breweries and other beverage and drink companies – HS Code 7010.9021.29 and 7010.9031.00
+Used Compressors – HS Code 8414.3000, Used Air Conditioners – HS Codes 8415.1000.11 – 8415.9000.99 and Used Fridges/ Freezers – HS Codes 8418.1000.11 – 8418.69.0000
+Used Motor Vehicles above fifteen (15) years from the year of manufacture – HS Codes 8703.10.00 – 8703.90.0000
+Ball Point Pens and parts including refills (excluding tip) HS Code 9608.10.0000
+Tomato Paste or Concentrate put up for retail sale – 2002100000, 2002902000, 2002909000
+Goods: Schedule 4 The Importation of which is Absolutely Prohibited  ]]>
+
+    </string>
+
+    <string name="export_prohibition_list">
+
+        Maize
+Timber (rough or sawn)
+Raw hides and skin (including Wet Blue and all unfinished leather) HS Codes 4101.2000.00 – 4108.9200.00
+Scrap Metals
+Unprocessed rubber latex and rubber lumps
+Artifacts and Antiquities
+Wildlife animals classified as endangered species and their products (e.g. Crocodile, Elephant, Lizard, Eagle, Monkey, Zebra, Lion etc.)
+All goods imported
+    </string>
+</resources>
